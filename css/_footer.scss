@@ -1,0 +1,55 @@
+@import '_vars.scss';
+
+footer {
+    width: 100%;
+    background: rgb(15, 213, 63);
+    background: linear-gradient(0deg, rgba(15, 213, 63, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    margin-top: 50px;
+}
+
+footer>div {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+footer h4 {
+    padding-bottom: 15px;
+}
+
+footer ul {
+    @include liste;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 0;
+}
+
+footer li {
+    width: 15%;
+}
+
+footer div div {
+    width: 30%;
+
+    img {
+        width: 100%;
+    }
+}
+
+footer a {
+    @include bouton;
+    padding-top: 5px;
+    width: 70%;
+    text-decoration: none;
+}
+
+h4 {
+    font-family: "bildad";
+}
+
+footer div div:first-of-type {
+    width: 15%;
+}

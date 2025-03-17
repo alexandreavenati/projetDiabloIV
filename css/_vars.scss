@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "bildad";
+    src: url(../font/Bildad.ttf);
+}
+
+@font-face {
+    font-family: "diablo";
+    src: url(../font/diablo.ttf);
+}
+
+@font-face {
+    font-family: "diablo-light";
+    src: url(../font/Diablo\ Light.ttf);
+}
+
+// Container
+
+h2{
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@mixin container {
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+@mixin img {
+    img {
+        width: 100%;
+    }
+}
+
+@mixin bouton {
+    display: block;
+    background-color: rgb(128, 209, 7);
+    font-family: "bildad";
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 1s ease;
+    text-decoration: none;
+
+    &:hover {
+        background-color: black;
+        color: rgb(128, 209, 7);
+        border: solid 1px rgb(128, 209, 7);
+    }
+}
+
+@mixin liste {
+    list-style: none;
+}
+
+@mixin marginH2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@mixin titreBlanc {
+    font-family: "diablo";
+    font-size: 30px;
+    color: white;
+}
+
+@mixin para {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+@mixin stitreBlanc {
+    font-family: "diablo-light";
+    color: white;
+}
+
+@mixin pass {
+    background-color: rgb(128, 209, 7);
+    color: white;
+    border: solid 1px black;
+}
+

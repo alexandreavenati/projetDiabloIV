@@ -1,0 +1,35 @@
+@import '_vars.scss';
+
+h2{
+    @include titreBlanc;
+    @include marginH2;
+    text-align: center;
+}
+
+#gameplay > div {
+    display: flex;
+    justify-content: space-between;
+    @include container;
+    iframe{
+        width: 100%;
+    }
+}
+
+#gameplay article:first-of-type {
+    width: 45%;
+}
+
+#gameplay article:last-of-type {
+    width: 50%;
+}
+
+#gameplay h3{
+    @include stitreBlanc;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+p{
+    @include para;
+    margin-bottom: 15px;
+}
